@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="header">
+    <h1>RxJS Tutorial</h1>
+  </div>
+
+  <div class="output">
+    <!-- <div class="message-wrapper" *ngFor="let output of outputs">
+      <span class="time">{{ output.time }}</span>
+      : <span class="message">{{ output.message }}</span>
+    </div> -->
+    @for (output of outputs; track output.time) {
+    <div>
+      <span class="time">{{ output.time }}</span>
+      : <span class="message">{{ output.message }}</span>
+    </div>
+    }
+  </div>
+</div>
