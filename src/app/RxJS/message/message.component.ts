@@ -34,7 +34,7 @@ export class MessageComponent implements OnInit {
 
   // Triggers when the componet is initialized
   ngOnInit() {
-    this.createObservable();
+    // this.createObservable();
   }
 
   // createObservable() {

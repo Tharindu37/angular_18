@@ -1,1 +1,14 @@
-<router-outlet />
+<!-- <router-outlet /> -->
+
+<main>
+  <h1>Hello, {{ title }}</h1>
+  <hr />
+  <tl-listbox #listbox (valueChange)="logValueChange($event)">
+    <tl-option value="Onion">Onion</tl-option>
+    <tl-option value="Tomato">Tomato</tl-option>
+    <tl-option value="Garlic">Garlic</tl-option>
+    <tl-option value="Pepper">Pepper</tl-option>
+  </tl-listbox>
+  <hr />
+  <p>Listbox value: {{ listbox.value() }}</p>
+</main>
