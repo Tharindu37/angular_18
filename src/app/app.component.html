@@ -1,9 +1,14 @@
 <!-- <router-outlet /> -->
 
-<main>
+<!-- <main>
   <h1>Hello, {{ title }}</h1>
   <hr />
-  <tl-listbox #listbox (valueChange)="logValueChange($event)">
+  <tl-listbox
+    #listbox
+    [orientation]="orientation()"
+    (orientationChange)="logOrientationChange($event)"
+    (valueChange)="logValueChange($event)"
+  >
     <tl-option value="Onion">Onion</tl-option>
     <tl-option value="Tomato">Tomato</tl-option>
     <tl-option value="Garlic">Garlic</tl-option>
@@ -11,4 +16,9 @@
   </tl-listbox>
   <hr />
   <p>Listbox value: {{ listbox.value() }}</p>
-</main>
+  <button type="button" (click)="toggleOrientation()">
+    Change orientation
+  </button>
+</main> -->
+
+<router-outlet></router-outlet>
