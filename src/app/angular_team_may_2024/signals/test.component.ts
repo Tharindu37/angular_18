@@ -14,6 +14,10 @@ export type Orientation = 'vertical' | 'horizontal';
   selector: 'tl-listbox',
   template: `<ng-content />`,
   standalone: true,
+  host: {
+    role: 'listbox',
+    '[tabIndex]': 'dissabled() ? -1 : 0',
+  },
   styles: `
   :host{
     display: flex;
@@ -35,6 +39,8 @@ export class ListBox<T> {
       this.orientationChange.emit(this.orientation());
     });
   }
+
+  dissabled() {}
 }
 
 @Component({

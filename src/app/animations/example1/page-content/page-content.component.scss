@@ -1,0 +1,26 @@
+.nav{
+    width: 100vw;
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    :first-child{
+        margin-left: 10px;
+    }
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.main-wrap{
+    padding: 20px;
+}

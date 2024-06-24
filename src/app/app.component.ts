@@ -26,5 +26,17 @@ export class AppComponent {
     console.log(newOrientation);
   }
 
-  toggleOrientation() {}
+  toggleOrientation() {
+    // this.orientation.set(
+    //   this.orientation() === 'horizontal' ? 'vertical' : 'horizontal'
+    // );
+    this.orientation.update((oldValue) =>
+      oldValue === 'horizontal' ? 'vertical' : 'horizontal'
+    );
+    // if (this.orientation() === 'horizontal') {
+    //   this.orientation.set('vertical');
+    // } else {
+    //   this.orientation.set('horizontal');
+    // }
+  }
 }

@@ -1,0 +1,20 @@
+<!-- <div (click)="close.emit()" class="menu">
+  <ul class="item">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Rooms</li>
+    <li>Customers</li>
+  </ul>
+</div> -->
+
+<ul (click)="close.emit()">
+  @for (item of items; track item) {
+  <li>
+    <a>{{ item }}</a>
+  </li>
+  }
+</ul>
+<button (click)="close.emit()">
+  <span class="visually-hidden">Close Menu</span>
+</button>
